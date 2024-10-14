@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang='es'>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset='utf-8' />
+	<title>Página personal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	
+	<script src="Javascript/funciones.js" defer></script>
+</head>
+<body onload="mostrarFyH()">
+	<header>
+		<h2 class="menu-title">Menú</h2>
+		<nav>
+			<ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='autobiografia.html'>¿Quién soy?</a></li>
+                <li><a href='galeria.html'>Galería</a></li>
+                <li><a href='contacto.html'>Contacto</a></li>
+				<li><a href="actividades.html">Actividades</a></li>
+            </ul>
+		</nav>
+	</header>
+
+	<section>	
+		<h1>Bienvenidos a mi pagina personal</h1>
+		<p>En este sitio encontrarás información acerca de mi persona, algunas imágenes y una sección de contacto</p>
+			
+		<video controls>
+			<source src="Media/universo.mp4" type="video/mp4">
+			Lo siento, el navegador no soporta video HTML5. ¡Actualízalo!
+		</video>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/kjNAsaonQsU?si=nMP1wUUbIUFgYFxH"
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</section>
+
+	<footer>
+		<p id="fecha-hora"></p>
+	</footer>
+</body>
+</html>

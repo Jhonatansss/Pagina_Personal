@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset='utf-8' />
+	<title>Página personal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+    <script src="/Javascript/funciones.js"></script>
+    <script text="Javascript/funciones.js" >
+        function vaciar(){
+    document.getElementById("n1").value="";
+}
+function cuadrado(){
+    let num = document.getElementById("n1").value;
+            let checkbox = document.getElementById("cuadrarCheck").checked;
+
+            if (num === "") {
+                alert("Por favor, ingrese un número.");
+                return;
+            }
+
+            if (checkbox) {
+                let resultado = num * num;
+                document.getElementById("n1").value = resultado;
+            } else {
+                alert("El checkbox no está marcado, no se realiza la operación.");
+            }
+        }
+    </script>
+
+    <script>
+        function res(){
+            var respuesta = document.getElementById('respuesta');
+            var resultado = document.getElementById('resultado');
+            if(respuesta.value === "Cristo")
+                resultado.innerHTML = "Correcto";
+            else resultado.innerHTML = "incorrecto";
+
+        }
+    </script>
+	
+
+</head>
+<body onload="iniciarFunciones()">
+	<header>
+		<h2 class="menu-title">Menú</h2>
+		<nav>
+			<ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='autobiografia.html'>¿Quién soy?</a></li>
+                <li><a href='galeria.html'>Galería</a></li>
+                <li><a href='contacto.html'>Contacto</a></li>
+				<li><a href="actividades.html">Actividades</a></li>
+            </ul>
+		</nav>
+	</header>
+    <section>
+    <h1>Actividades realizadas para uso personal</h1>
+    <h4>Conversor  A Pesos Mexicanos:</h4>
+    <script type="text/Javascript">
+        let pesos = prompt("¿Cuántos pesos mexicanos quiere convertir?");
+        
+        let aDolares = pesos * 0.051;
+        let aEuros = pesos * 0.046;
+        
+        document.write(pesos + " Pesos Mexicanos son: " + aDolares.toFixed(2) + " Dólares.<br>");
+        document.write(pesos + " Pesos Mexicanos son: " + aEuros.toFixed(2) + " Euros.");
+    </script>
+
+
+    </section>
+    <section>
+
+    <h4>Calculadora:</h4>
+    Número:
+    <input type="text" id="n1" onclick="vaciar()">
+    <input type="checkbox" id="cuadrarCheck"> Cuadrar el número
+    <button onclick="cuadrado()">x<sup>2</sup></button>
+    </section>
+
+
+
+    <section>
+        <p>1. ¿Qué significa CPU?</p>
+        <input type="radio" name="pregunta1" value="GPU"> GPU<br>
+        <input type="radio" name="pregunta1" value="CPU"> CPU<br>
+        <input type="radio" name="pregunta1" value="RAM"> RAM<br>
+        <br>
+        <button type="button" onclick="res1()">Consultar</button>
+        <p><div id="resultado1" class="result"></div></p>
+
+        <p>2. ¿Qué componente es responsable de ejecutar las instrucciones de un programa?</p>
+        <textarea id="respuesta2" rows="4" cols="50" placeholder="Escriba su respuesta aquí..."></textarea>
+        <br>
+        <button type="button" onclick="res2()">Consultar</button>
+        <p><div id="resultado2" class="result"></div></p>
+
+        <p>3. ¿Qué es una GPU?</p>
+        <textarea id="respuesta3" rows="4" cols="50" placeholder="Escriba su respuesta aquí..."></textarea>
+        <br>
+        <button type="button" onclick="res3()">Consultar</button>
+        <p><div id="resultado3" class="result"></div></p>
+
+        <p>4. ¿Cuál es el sistema operativo más utilizado en computadoras personales?</p>
+        <input type="radio" name="pregunta4" value="Windows"> Windows<br>
+        <input type="radio" name="pregunta4" value="Linux"> Linux<br>
+        <input type="radio" name="pregunta4" value="MacOS"> MacOS<br>
+        <br>
+        <button type="button" onclick="res4()">Consultar</button>
+        <p><div id="resultado4" class="result"></div></p>
+
+        <p>5. ¿Qué significa RAM?</p>
+        <input type="text" id="respuesta5" value="Responda aquí">
+        <button type="button" onclick="res5()">Consultar</button>
+        <p><div id="resultado5" class="result"></div></p>
+    </section>
+
+    <section>
+
+
+    </section>
+
+
+
+
+	<footer>
+		Tizimín, Yucatán, Agosto, 2024.
+	</footer>
+    
+</body>
+</html>
