@@ -19,7 +19,7 @@ header{
     left: 10px;
     top: 25px;
     flex-direction: column;
-    height: 42vh;
+    height: 52vh;
     width: 12%;
     display: flex;
     align-items: center;
@@ -184,6 +184,25 @@ section video, section iframe {
 }
 
 section {
-    margin-bottom: 10px; /* Agrega un margen de 20px en la parte superior e inferior */
-    padding: 30px; /* Agrega un espacio interno de 10px */
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Roboto Slab', serif;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
 }

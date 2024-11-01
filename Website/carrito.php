@@ -23,6 +23,7 @@ session_start();
                 <li><a href='galeria.html'>Galería</a></li>
                 <li><a href='contacto.html'>Contacto</a></li>
                 <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="carrito.php">Carrito</a></li>
             </ul>
         </nav>
     </header>
